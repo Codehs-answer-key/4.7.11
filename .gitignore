@@ -1,23 +1,54 @@
-# Compiled class file
-*.class
-
-# Log file
-*.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+public class RockPaperScissors extends ConsoleProgram
+{
+    private static final String USER_PLAYER = "User wins!";
+    private static final String COMPUTER_PLAYER = "Computer wins!";
+    private static final String TIE = "Tie";
+        
+    private String getWinner(String user, String computer)
+    {
+        if(user.equals(computer))
+        return TIE;
+        else if (user.equals("rock") && computer.equals("paper"))return COMPUTER_PLAYER;
+        else if (user.equals("rock") && computer.equals ("scissors"))return USER_PLAYER;
+        else if (user.equals("paper")&& computer.equals("scissors"))return COMPUTER_PLAYER;
+        else if (user.equals("paper")&& computer.equals("rock"))return USER_PLAYER;
+        else if (user.equals("scissors")&& computer.equals("rock"))return COMPUTER_PLAYER;
+        else if (user.equals("scissors")&& computer.equals("paper"))return USER_PLAYER;
+        else return TIE;
+    }
+}
+    
+    public void run()
+    {
+        String choice = readline("what do you choose");
+        System.out.println(choice);
+        System.out.println(Randomizer);
+        String game = readline("what do you choose");
+   
+   public class RockPaperScissors extends ConsoleProgram
+{
+    private static final String USER_PLAYER = "User wins!";
+    private static final String COMPUTER_PLAYER = "Computer wins!";
+    private static final String TIE = "Tie";
+        
+    private String getWinner(String user, String computer)
+    {
+        if(user.equals(computer))
+        return TIE;
+        else if (user.equals("rock") && computer.equals("paper"))return COMPUTER_PLAYER;
+        else if (user.equals("rock") && computer.equals ("scissors"))return USER_PLAYER;
+        else if (user.equals("paper")&& computer.equals("scissors"))return COMPUTER_PLAYER;
+        else if (user.equals("paper")&& computer.equals("rock"))return USER_PLAYER;
+        else if (user.equals("scissors")&& computer.equals("rock"))return COMPUTER_PLAYER;
+        else if (user.equals("scissors")&& computer.equals("paper"))return USER_PLAYER;
+        else return TIE;
+    }
+}
+    
+    public void run()
+    {
+        String choice = readline("what do you choose");
+        System.out.println(choice);
+        System.out.println(Randomizer);
+        String game = readline("what do you choose");
+                
